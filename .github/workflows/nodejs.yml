@@ -30,4 +30,4 @@ jobs:
     needs: [hyperFine_prev, hyperFine_new]
     steps:
       - run: |
-          echo "Hello World"
+          echo "Run compare logic here"
