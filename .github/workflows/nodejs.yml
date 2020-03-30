@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  hyperFine:
+  hyperFine_prev:
     runs-on: ubuntu-latest
     steps:
       - shell: bash
@@ -18,24 +18,11 @@ jobs:
           wget https://github.com/sharkdp/hyperfine/releases/download/v1.9.0/hyperfine_1.9.0_amd64.deb
           sudo dpkg -i hyperfine_1.9.0_amd64.deb
           hyperfine --min-runs 5 'sleep 0.2' 'sleep 3.2'
-          
-      - name: Upload results from hyperFine
-        uses: actions/upload-artifact@v1
-        with:
-          name: results
-          path: results.txt
-          
-  compareTies:
+  hyperFine_new:
     runs-on: ubuntu-latest
-    needs: hyperFine
     steps:
-      - name: Download results
-        uses: actions/download-artifact@v1
-        with:
-          name: results
-      - name: Display Results
-        shell: bash
-        run: |
-          value=`cat results/results.txt`
-          echo The result is $value
-          
+      - shell: bash
+      - run: |
+          wget https://github.com/sharkdp/hyperfine/releases/download/v1.9.0/hyperfine_1.9.0_amd64.deb
+          sudo dpkg -i hyperfine_1.9.0_amd64.deb
+          hyperfine --min-runs 5 'sleep 0.2' 'sleep 3.2'
