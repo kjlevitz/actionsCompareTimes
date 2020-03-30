@@ -12,3 +12,7 @@ https://developer.github.com/v3/actions/workflow_runs/#list-repository-workflow-
 
 
 Find a way to run the time comparison after all other jobs are completed
+
+
+https://api.github.com/repos/kjlevitz/actionsCompareTimes/actions/runs
+Last job is the first job in ths object
