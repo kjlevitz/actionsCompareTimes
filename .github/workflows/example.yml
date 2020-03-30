@@ -1,7 +1,10 @@
 name: Share data between jobs
 
-on: [push]
-
+on:
+  push:
+    branches: [ branch ]
+  pull_request:
+    branches: [ branch ]
 jobs:
   job_1:
     name: Add 3 and 7
