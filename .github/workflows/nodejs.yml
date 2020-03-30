@@ -18,11 +18,12 @@ jobs:
           wget https://github.com/sharkdp/hyperfine/releases/download/v1.9.0/hyperfine_1.9.0_amd64.deb
           sudo dpkg -i hyperfine_1.9.0_amd64.deb
           hyperfine --min-runs 5 'sleep 0.2' 'sleep 3.2' > results.txt
-          - name: Upload results from hyperFine
-            uses: actions/upload-artifact@v1
-            with:
-              name: results
-              path: results.txt
+          
+      - name: Upload results from hyperFine
+        uses: actions/upload-artifact@v1
+        with:
+          name: results
+          path: results.txt
           
   compareTies:
     runs-on: ubuntu-latest
