@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  benchmark:
+  benchmark3:
     name: Run JavaScript benchmark example
     runs-on: ubuntu-latest
     steps:
