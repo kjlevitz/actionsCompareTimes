@@ -5,10 +5,10 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ branch ]
   pull_request:
-    branches: [ master ]
-
+    branches: [ branch ]
+    
 jobs:
   hyperFine_prev:
     runs-on: ubuntu-latest
