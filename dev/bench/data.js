@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1585851236554,
+  "lastUpdate": 1585851474328,
   "repoUrl": "https://github.com/kjlevitz/actionsCompareTimes",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -38,6 +38,44 @@ window.BENCHMARK_DATA = {
             "range": "±1.48%",
             "unit": "ops/sec",
             "extra": "84 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kevin@klevitz.com",
+            "name": "Kevin Levitz",
+            "username": "kjlevitz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d28051a53471a2650a104261e58b7773687546c",
+          "message": "Update README.md",
+          "timestamp": "2020-04-02T14:17:21-04:00",
+          "tree_id": "1ba9d52c17e868a1fa493e298a3570063ee8c30c",
+          "url": "https://github.com/kjlevitz/actionsCompareTimes/commit/9d28051a53471a2650a104261e58b7773687546c"
+        },
+        "date": 1585851473446,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "RegExp#test",
+            "value": 35661126,
+            "range": "±2.34%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
+          },
+          {
+            "name": "String#indexOf",
+            "value": 721946229,
+            "range": "±1.66%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
           }
         ]
       }
