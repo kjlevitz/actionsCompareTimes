@@ -14,7 +14,7 @@ jobs:
       - name: Run benchmark
         run: npm i --save benchmark && npm install && node bench.js | tee output.txt && git config --local user.email "action@github.com" && git config --local user.name "GitHub Action"
       - name: Store benchmark result
-        uses: kjlevitz/actionsCompareTimes@v1
+        uses: rhysd/github-action-benchmark@v1
         with:
           name: Benchmark.js Benchmark
           tool: 'benchmarkjs'
