@@ -2,7 +2,6 @@ var Benchmark = require('benchmark');
 const { exec } = require("child_process");
 var suite = new Benchmark.Suite;
 
-
 // add tests
 suite.add('Run index.js', function() {
   ///o/.test('Hello World!');
