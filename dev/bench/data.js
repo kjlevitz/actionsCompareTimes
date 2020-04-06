@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1586184630799,
+  "lastUpdate": 1586185252742,
   "repoUrl": "https://github.com/kjlevitz/actionsCompareTimes",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -76,6 +76,44 @@ window.BENCHMARK_DATA = {
             "range": "±1.67%",
             "unit": "ops/sec",
             "extra": "85 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kevin@klevitz.com",
+            "name": "Kevin Levitz",
+            "username": "kjlevitz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5c9a3539dbbbc47f926492a4d22c7cdb457abaaf",
+          "message": "Update index.js",
+          "timestamp": "2020-04-06T11:00:15-04:00",
+          "tree_id": "f7e72032e633e672cc02f0f48aecd9cf690326f4",
+          "url": "https://github.com/kjlevitz/actionsCompareTimes/commit/5c9a3539dbbbc47f926492a4d22c7cdb457abaaf"
+        },
+        "date": 1586185252334,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Run index.js",
+            "value": 28.08,
+            "range": "±11.01%",
+            "unit": "ops/sec",
+            "extra": "10 samples"
+          },
+          {
+            "name": "indexOf String",
+            "value": 622011369,
+            "range": "±12.96%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
           }
         ]
       }
