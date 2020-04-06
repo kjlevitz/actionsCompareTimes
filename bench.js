@@ -1,12 +1,29 @@
 var Benchmark = require('benchmark');
+const { exec } = require("child_process");
 var suite = new Benchmark.Suite;
+
+
 // add tests
 suite.add('RegExp#test', function() {
-  /o/.test('Hello World!');
+  ///o/.test('Hello World!');
+  exec("node index.js", (error, stdout, stderr) => {
+      if (error) {
+          //console.log(`error: ${error.message}`);
+          return;
+      }
+      if (stderr) {
+          //console.log(`stderr: ${stderr}`);
+          return;
+      }
+      //console.log(`stdout: ${stdout}`);
+  });
+
 })
 .add('String#indexOf', function() {
   'Hello World!'.indexOf('o') > -1;
 })
+
+
 // add listeners
 .on('cycle', function(event) {
   console.log(String(event.target));
