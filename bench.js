@@ -4,7 +4,7 @@ var suite = new Benchmark.Suite;
 
 
 // add tests
-suite.add('RegExp#test', function() {
+suite.add('Run index.js', function() {
   ///o/.test('Hello World!');
   exec("node index.js", (error, stdout, stderr) => {
       if (error) {
@@ -19,7 +19,7 @@ suite.add('RegExp#test', function() {
   });
 
 })
-.add('String#indexOf', function() {
+.add('indexOf String', function() {
   'Hello World!'.indexOf('o') > -1;
 })
 
