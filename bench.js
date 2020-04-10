@@ -32,4 +32,4 @@ suite.add('Run index.js', function() {
   console.log('Fastest is ' + this.filter('fastest').map('name'));
 })
 // run async
-.run({ 'async': true });
+.run();
