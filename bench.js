@@ -5,20 +5,15 @@ var suite = new Benchmark.Suite;
 
 // add tests
 suite.add('Run index.js', function() {
-  ///o/.test('Hello World!');
-  exec("node index.js", (error, stdout, stderr) => {
-      if (error) {
-          //console.log(`error: ${error.message}`);
-          return;
-      }
-      if (stderr) {
-          //console.log(`stderr: ${stderr}`);
-          return;
-      }
-      //console.log(`stdout: ${stdout}`);
-  });
-
+  child_process.execSync("node index.js", (error, stdout, stderr) => {
+      if (error) {/*console.log(`error: ${error.message}`);*/return;}if (stderr) {return;} //console.log(`stdout: ${stdout}`);})
 })
+  
+.add('Run index.js 2', function() {
+  child_process.execSync("node index.js", (error, stdout, stderr) => {
+      if (error) {/*console.log(`error: ${error.message}`);*/return;}if (stderr) {return;} //console.log(`stdout: ${stdout}`);})
+})
+    
 .add('indexOf String', function() {
   'Hello World!'.indexOf('o') > -1;
 })
