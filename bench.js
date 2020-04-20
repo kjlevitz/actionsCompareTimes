@@ -21,10 +21,6 @@ suite
   await sysCmd("node index.js");
 })
 
-.add('Run index2.js LONGER', async function() {
-  await sysCmd("node index2.js");
-})
-
 // add listeners
 .on('cycle', function(event) {
   //console.log(String(event.target));
