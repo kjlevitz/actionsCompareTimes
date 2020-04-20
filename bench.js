@@ -3,28 +3,34 @@ const { exec } = require("child_process");
 var suite = new Benchmark.Suite;
 
 
+async function sysCmd(cmd) {
+  return new Promise(function (resolve, reject) {
+    exec(cmd, (err, stdout, stderr) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve({ stdout, stderr });
+      }
+    });
+  });
+}
 // add tests
-suite.add('Run index.js', function() {
-  child_process.execSync("node index.js", (error, stdout, stderr) => {
-      if (error) {/*console.log(`error: ${error.message}`);*/return;}if (stderr) {return;} //console.log(`stdout: ${stdout}`);})
-})
-  
-.add('Run index.js 2', function() {
-  child_process.execSync("node index.js", (error, stdout, stderr) => {
-      if (error) {/*console.log(`error: ${error.message}`);*/return;}if (stderr) {return;} //console.log(`stdout: ${stdout}`);})
-})
-    
-.add('indexOf String', function() {
-  'Hello World!'.indexOf('o') > -1;
+suite
+
+.add('Run index.js', async function() {
+  await sysCmd("node index.js");
 })
 
+.add('Run index2.js LONGER', async function() {
+  await sysCmd("node index2.js");
+})
 
 // add listeners
 .on('cycle', function(event) {
-  console.log(String(event.target));
-})
-.on('complete', function() {
-  console.log('Fastest is ' + this.filter('fastest').map('name'));
+  //console.log(String(event.target));
+  //console.log(JSON.stringify(event.target.stats.sample));
+  //console.log(String(event.target.stats.mean));
+  console.log(String(event.target.stats.time));
 })
 // run async
-.run();
+.run({'async': true});
