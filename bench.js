@@ -28,8 +28,8 @@ suite
 
 // add listeners
 .on('cycle', function(event) {
-  let date_ob = new Date();
-  console.log("CURRENT TIME ON JOB FINISH = " + date_ob );
+  //let date_ob = new Date();
+  //console.log("CURRENT TIME ON JOB FINISH = " + date_ob );
   console.log(String(event.target)); //DEFAULT
   //console.log(JSON.stringify(event.target.stats.sample));
   //console.log(String(event.target.stats.mean));
