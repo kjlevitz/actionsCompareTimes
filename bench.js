@@ -17,16 +17,29 @@ async function sysCmd(cmd) {
 // add tests
 suite
 
-.add('Run index.js', async function() {
-  await sysCmd("node index.js");
+// .add('Run index.js', async function() {
+//   await sysCmd("node index.js");
+// })
+
+.add('Run Long Looper', async function() {
+  await sysCmd("node endlessloop.js");
 })
 
 // add listeners
 .on('cycle', function(event) {
-  //console.log(String(event.target));
+  let date_ob = new Date();
+  console.log("CURRENT TIME ON JOB FINISH = " + date_ob );
+  console.log(String(event.target)); //DEFAULT
   //console.log(JSON.stringify(event.target.stats.sample));
   //console.log(String(event.target.stats.mean));
-  console.log(String(event.target.stats.time));
+
+  
+  /*
+    console.log(String(event.target.times.elapsed)); 
+    6.526
+    7.481
+  */
+
 })
 // run async
-.run({'async': false});
+.run({'async': true});
