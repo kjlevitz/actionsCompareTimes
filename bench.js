@@ -1,6 +1,7 @@
 var Benchmark = require('benchmark');
 const { exec } = require("child_process");
 var suite = new Benchmark.Suite;
+var execSync = require('child_process').execSync;
 
 
 async function sysCmd(cmd) {
@@ -22,7 +23,7 @@ suite
 // })
 
 .add('Run Long Looper', async function() {
-  await sysCmd("node endlessloop.js");
+  execSync("node endlessloop.js");
 })
 
 // add listeners
