@@ -29,4 +29,4 @@ suite
   console.log(String(event.target.stats.time));
 })
 // run async
-.run({'async': true});
+.run({'async': false});
