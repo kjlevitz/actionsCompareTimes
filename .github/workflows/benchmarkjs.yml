@@ -17,11 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1.2.0
+      - uses: actions/setup-node@v1
       - name: Run benchmark
         run: npm i --save benchmark && npm install && node bench.js | tee output.txt && git config --local user.email "action@github.com" && git config --local user.name "GitHub Action"
       - name: Store benchmark result
-        uses: veg/github-action-benchmark
+        uses: veg/github-action-benchmark@v1
         with:
           name: Benchmark.js Benchmark
           tool: 'benchmarkjsInverse'
