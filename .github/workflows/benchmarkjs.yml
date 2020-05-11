@@ -18,8 +18,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - name: Run benchmark
-        run: |
-          npm i --save benchmark 
+        run: 
           npm install
           node bench.js | tee output.txt\
           git stash .
