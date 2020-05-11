@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1589217247132,
+  "lastUpdate": 1589218261599,
   "repoUrl": "https://github.com/kjlevitz/actionsCompareTimes",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -183,6 +183,37 @@ window.BENCHMARK_DATA = {
             "range": "±1.47%",
             "unit": "secs/op",
             "extra": "32 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kevin@klevitz.com",
+            "name": "Kevin Levitz",
+            "username": "kjlevitz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "944b1cd7e635d3cbd1aa09379bb5cfe2e5db883b",
+          "message": "Testing OPS/sec vs Secs/Op GHPages",
+          "timestamp": "2020-05-11T13:29:55-04:00",
+          "tree_id": "fbc5dafc68388e498c507f6ff840221b548122f4",
+          "url": "https://github.com/kjlevitz/actionsCompareTimes/commit/944b1cd7e635d3cbd1aa09379bb5cfe2e5db883b"
+        },
+        "date": 1589218260999,
+        "tool": "benchmarkjsInverse",
+        "benches": [
+          {
+            "name": "Run Long Looper",
+            "value": 0.07739938080495357,
+            "range": "±2.05%",
+            "unit": "secs/op",
+            "extra": "36 samples"
           }
         ]
       }
