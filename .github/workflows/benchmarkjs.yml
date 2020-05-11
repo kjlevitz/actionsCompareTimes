@@ -24,7 +24,7 @@ jobs:
           npm i --save benchmark;
           npm install --no-optional;
           node bench.js | tee output.txt\;
-          git stash .;
+          git stash temp;
           git config --local user.email "action@github.com";
           git config --local user.name "GitHub Action"
       - name: Store benchmark result
