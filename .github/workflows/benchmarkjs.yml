@@ -27,8 +27,6 @@ jobs:
           git stash save;
           git config --local user.email "action@github.com";
           git config --local user.name "GitHub Action";
-          ls /home/runner/work/actionsCompareTimes/actionsCompareTimes/;
-          cat /home/runner/work/actionsCompareTimes/actionsCompareTimes/output.txt
       - name: Store benchmark result
         uses: veg/github-action-benchmark@v1
         with:
