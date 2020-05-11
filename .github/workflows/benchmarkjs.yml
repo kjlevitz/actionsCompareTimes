@@ -19,10 +19,10 @@ jobs:
       - uses: actions/setup-node@v1
       - name: Run benchmark
         run: 
-          npm install
-          node bench.js | tee output.txt\
-          git stash .
-          git config --local user.email "action@github.com"
+          npm install;
+          node bench.js | tee output.txt\;
+          git stash .;
+          git config --local user.email "action@github.com";
           git config --local user.name "GitHub Action"
       - name: Store benchmark result
         uses: veg/github-action-benchmark@v1
