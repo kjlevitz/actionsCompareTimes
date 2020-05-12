@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1589221856455,
+  "lastUpdate": 1589308256998,
   "repoUrl": "https://github.com/kjlevitz/actionsCompareTimes",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -124,6 +124,37 @@ window.BENCHMARK_DATA = {
             "range": "±3.09%",
             "unit": "secs/op",
             "extra": "37 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kevin@klevitz.com",
+            "name": "Kevin Levitz",
+            "username": "kjlevitz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e5d9310dfc2c009a71728b0000308c01b46f7f11",
+          "message": "Forcing GA run to test new rounding of result",
+          "timestamp": "2020-05-12T14:30:13-04:00",
+          "tree_id": "acd4c6b71da8b156892bfcc4fddfeb7d7ef26c02",
+          "url": "https://github.com/kjlevitz/actionsCompareTimes/commit/e5d9310dfc2c009a71728b0000308c01b46f7f11"
+        },
+        "date": 1589308256410,
+        "tool": "benchmarkjsInverse",
+        "benches": [
+          {
+            "name": "Run Long Looper",
+            "value": 0.09174311926605504,
+            "range": "±1.42%",
+            "unit": "secs/op",
+            "extra": "31 samples"
           }
         ]
       }
