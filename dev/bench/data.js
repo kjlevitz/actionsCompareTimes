@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1592145816746,
+  "lastUpdate": 1592145863813,
   "repoUrl": "https://github.com/kjlevitz/actionsCompareTimes",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -310,6 +310,37 @@ window.BENCHMARK_DATA = {
             "range": "±1.23%",
             "unit": "secs/op",
             "extra": "33 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kevin@klevitz.com",
+            "name": "Kevin Levitz",
+            "username": "kjlevitz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2c09ddfc38c40d6505f551ab2d1551e0c68c7ab2",
+          "message": "Update README.md",
+          "timestamp": "2020-06-14T10:43:21-04:00",
+          "tree_id": "4742467c585f7c757cfc0ffc3f6dd24783d35021",
+          "url": "https://github.com/kjlevitz/actionsCompareTimes/commit/2c09ddfc38c40d6505f551ab2d1551e0c68c7ab2"
+        },
+        "date": 1592145863336,
+        "tool": "benchmarkjsInverse",
+        "benches": [
+          {
+            "name": "Run Long Looper",
+            "value": 0.0966183574879227,
+            "range": "±3.07%",
+            "unit": "secs/op",
+            "extra": "30 samples"
           }
         ]
       }
