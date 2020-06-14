@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1592145374234,
+  "lastUpdate": 1592145442619,
   "repoUrl": "https://github.com/kjlevitz/actionsCompareTimes",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -248,6 +248,37 @@ window.BENCHMARK_DATA = {
             "range": "±2.05%",
             "unit": "secs/op",
             "extra": "34 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kevin@klevitz.com",
+            "name": "Kevin Levitz",
+            "username": "kjlevitz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5ec350f3582b033add6717ede0c81a5597b4671e",
+          "message": "update: Add end of project notes to readme\n\nSmall formatting fix",
+          "timestamp": "2020-06-14T10:36:08-04:00",
+          "tree_id": "2868e3df57ad29bc3421d96b969df82457dcc98e",
+          "url": "https://github.com/kjlevitz/actionsCompareTimes/commit/5ec350f3582b033add6717ede0c81a5597b4671e"
+        },
+        "date": 1592145441682,
+        "tool": "benchmarkjsInverse",
+        "benches": [
+          {
+            "name": "Run Long Looper",
+            "value": 0.07987220447284345,
+            "range": "±1.37%",
+            "unit": "secs/op",
+            "extra": "35 samples"
           }
         ]
       }
