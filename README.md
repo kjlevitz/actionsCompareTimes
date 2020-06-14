@@ -10,7 +10,7 @@ To use this repository to trigger a job, simply make a pullrequest with small ch
 ## Current state
 This repository has served it's purpose as a test enrivonment and the knowledge gained has been implemented within our production environment at https://github.com/veg/hyphy
 
-## Production environment examples which this repository helped implement
+## Production examples which this repository helped implement
 To see this in action you can view a real world example at https://github.com/veg/hyphy/runs/675752555
 
 To see the results page built to GH-Pages you can view http://veg.github.io/hyphy/dev/bench/
