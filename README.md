@@ -1,5 +1,5 @@
 ## Goal of this project
-This is a simple repository that was used as a testing trigger got a Git Actions branch. The actions branch that this is designed to trigger can be found at https://github.com/veg/github-action-benchmark
+This is a simple repository that was used as a testing trigger for a customized Git Actions branch. The actions branch that this is designed to trigger can be found at https://github.com/veg/github-action-benchmark
 
 ## Behind the scenes
 This repository uses a customized branch of https://github.com/rhysd/github-action-benchmark to populate a results page wtih run-time metrics. The customized branch is located at https://github.com/veg/github-action-benchmark and adds an additional tool to run an inverse of the ops/sec function from the orignal repository.
